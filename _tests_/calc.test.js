@@ -85,4 +85,15 @@ describe("GalacticAge", function () {
     expect(neptuneAge).toEqual(expectedAge);
   });
 
+  it('Properly calculates age on Pluto.', function () {
+    const age = 22;
+    const plutoYears = Squidward;
+    const expectedAge = plutoYears * age;
+
+    const galacticAge = new GalacticAge(age);
+    const plutoAge = galacticAge.plutoAge();
+
+    expect(plutoAge).toEqual(expectedAge);
+  });
+
 });
