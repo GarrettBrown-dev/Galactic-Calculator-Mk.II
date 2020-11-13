@@ -11,10 +11,6 @@ export class GalacticAge {
       Jupiter: 11.86,
     }
   }
-  earthAge() {
-    let earthAge = (this.age * this.planetYears.Earth);
-    return earthAge
-  }
   mercuryAge() {
     let mercuryAge = (this.age * this.planetYears.Mercury);
     return mercuryAge
@@ -22,6 +18,14 @@ export class GalacticAge {
   venusAge() {
     let venusAge = (this.age * this.planetYears.Venus);
     return venusAge
+  }
+  earthAge() {
+    let earthAge = (this.age * this.planetYears.Earth);
+    return earthAge
+  }
+  marsAge() {
+    let marsAge = (this.age * this.planetYears.Mars);
+    return marsAge
   }
 }
 

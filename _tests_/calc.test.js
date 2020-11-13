@@ -29,4 +29,15 @@ describe("GalacticAge", function () {
 
     expect(venusAge).toEqual(expectedAge);
   });
+
+  it('Properly calculates age on Mars.', function () {
+    const age = 22;
+    const marsYears = Squidward;
+    const expectedAge = marsYears * age;
+
+    const galacticAge = new GalacticAge(age);
+    const marsAge = galacticAge.marsAge();
+
+    expect(marsAge).toEqual(expectedAge);
+  });
 });
