@@ -17,14 +17,19 @@
       <h1><strong>Galactic Age Calculator</strong></h1>
       <h2>Input your age to see how much you've aged on other planets!</h2>
     </div>
-    <form id="user-input">
+    <form id="age-check-form">
       <div class="form-group">
         <label for="age" class="form-check-label">Age:</label>
-        <input type="number" class="form-control col-3" id="age">
+        <input type="number" class="form-control" id="age">
+      </div>
+      <div class="planet-check-form">
+        <label for="planet" class="form-check-label">Planet:</label>
+        <input type="text" class="form-control" id="planet">
       </div>
       <button class="btn btn-info" type="submit">Submit</button>
     </form>
-    <ul id="response"></ul>
+    <ul id="ageResponse"></ul>
+    <ul id="lifeResponse"></ul>
 
   </div>
 </body>

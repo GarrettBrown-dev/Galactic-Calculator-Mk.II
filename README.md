@@ -1,12 +1,12 @@
-# _Galactic-Age-Calculator_
+# _Galactic-Age-Calculator Mk.II_
 
-#### _A calculator for life expectancy on different planets. 11/13/2020_
+#### _A calculator for age and life expectancy on all planets in the solar system. 11/13/2020_
 
 #### By _**Garrett Brown**_
 
 ## Description
 
-_This is intended as a proof of knowledge for week 5 at Epicodus. Returns life expectancy on different planets. Created with TDD and Jest.
+_This is intended as a proof of knowledge for week 5 at Epicodus. Returns user's age and life expectancy on different planets. Created with TDD and Jest. This is the new and improved version of this project that includes all planets, and hopefully a working web page as well._
 
 // 1.) Test if base properties are initialized. (galacticAge = age)
 // 2.) Test if caculations apply properly to display users age on Mercury. if (mercuryAge, galacticAge = age * mercuryYears) 
@@ -44,7 +44,12 @@ _Any issues? Suggestions? Let me know via email! gman9mm@live.com. Contributions
 
 ## Technologies Used
 
-_Created with Node.js, Jest, HTML, CSS, and Javascript. _
+_Created with:_
+* Node.js
+* Jest
+* HTML
+* CSS/Bootstrap
+* Javascript
 
 ### License
 

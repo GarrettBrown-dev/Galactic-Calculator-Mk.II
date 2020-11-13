@@ -9,7 +9,15 @@ $(document).ready(function () {
     event.preventDefault();
     const age = parseInt($('#age').val());
     const galacticAge = new GalacticAge(age);
-    const response = galacticAge.checkType();
-    $('#response').append(`<p>${response}</p>`);
+    const ageResponse = galacticAge.planetYears(planet);
+    $('#ageResponse').append(`<p>${ageResponse}</p>`);
   });
-})
+
+  $('#life-check-form').submit(function (event) {
+    event.preventDefault();
+    const age = parseInt($('#age').val());
+    const galacticAge = new GalacticAge(age);
+    const lifeResponse = galacticAge.lifeExpectancy(planet);
+    $('lifeResponse').append(`<p>${lifeResponse}</p>`);
+  });
+});
