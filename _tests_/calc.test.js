@@ -165,4 +165,15 @@ describe("GalacticAge", function () {
     expect(yearsRemaining).toEqual(expectedValue)
   });
 
+  it('Properly calculates life expectancy for Uranus.', () => {
+    const age = 22;
+    const uranusYears = Bumblescuff;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * uranusYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Uranus");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
+
 });
