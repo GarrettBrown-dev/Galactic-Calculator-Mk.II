@@ -145,7 +145,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates life expectancy for Jupiter.', () => {
     const age = 22;
-    const jupiterYears = 1.88;
+    const jupiterYears = 11.86;
     const averageLifeExpectancy = 88;
     const expectedValue = ((averageLifeExpectancy - age) * jupiterYears);
     const galacticAge = new GalacticAge(age);
