@@ -9,6 +9,10 @@ export class GalacticAge {
       Earth: 1.00,
       Mars: 1.88,
       Jupiter: 11.86,
+      Saturn: 29.46,
+      Uranus: 84.01,
+      Neptune: 164.79,
+      Pluto: 248.59,
     }
   }
   mercuryAge() {
@@ -26,6 +30,26 @@ export class GalacticAge {
   marsAge() {
     let marsAge = (this.age * this.planetYears.Mars);
     return marsAge
+  }
+  jupiterAge() {
+    let jupiterAge = (this.age * this.planetYears.Jupiter);
+    return jupiterAge
+  }
+  saturnAge() {
+    let saturnAge = (this.age * this.planetYears.Saturn);
+    return saturnAge
+  }
+  uranusAge() {
+    let uranusAge = (this.age * this.planetYears.Uranus);
+    return uranusAge
+  }
+  neptuneAge() {
+    let neptuneAge = (this.age * this.planetYears.Neptune);
+    return neptuneAge
+  }
+  plutoAge() {
+    let plutoAge = (this.age * this.planetYears.Pluto);
+    return plutoAge
   }
 }
 
