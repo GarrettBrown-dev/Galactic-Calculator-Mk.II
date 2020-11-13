@@ -65,13 +65,24 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Uranus.', function () {
     const age = 22;
-    const uranusYears = Squidward;
+    const uranusYears = 84.01;
     const expectedAge = uranusYears * age;
 
     const galacticAge = new GalacticAge(age);
     const uranusAge = galacticAge.uranusAge();
 
     expect(uranusAge).toEqual(expectedAge);
+  });
+
+  it('Properly calculates age on Neptune.', function () {
+    const age = 22;
+    const neptuneYears = Squidward;
+    const expectedAge = neptuneYears * age;
+
+    const galacticAge = new GalacticAge(age);
+    const neptuneAge = galacticAge.neptuneAge();
+
+    expect(neptuneAge).toEqual(expectedAge);
   });
 
 });
