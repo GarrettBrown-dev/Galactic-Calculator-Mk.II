@@ -87,7 +87,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Pluto.', function () {
     const age = 22;
-    const plutoYears = Squidward;
+    const plutoYears = 248.59;
     const expectedAge = plutoYears * age;
 
     const galacticAge = new GalacticAge(age);
