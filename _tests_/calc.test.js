@@ -143,4 +143,15 @@ describe("GalacticAge", function () {
     expect(yearsRemaining).toEqual(expectedValue)
   });
 
+  it('Properly calculates life expectancy for Jupiter.', () => {
+    const age = 22;
+    const jupiterYears = 1.88;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * jupiterYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Jupiter");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
+
 });
