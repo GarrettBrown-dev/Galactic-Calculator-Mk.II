@@ -1,0 +1,20 @@
+body {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/ZxMaZq2VfVKj7Lbo5y7dLR-970-80.jpg.webp");
+  background-color: #cccccc;
+ }
+ 
+h1{
+  /* position:absolute;
+  top: 120px;
+  left:45px;
+  width:150px; */
+  font-weight: bolder;
+}
+
+#show-Cost{
+  display: none;
+}
+
+.container{
+  background-color: rgb(3, 192, 192);
+}
