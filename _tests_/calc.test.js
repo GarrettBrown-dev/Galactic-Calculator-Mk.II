@@ -134,7 +134,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates life expectancy for Mars.', () => {
     const age = 22;
-    const marsYears = Squidward;
+    const marsYears = 1.88;
     const averageLifeExpectancy = 88;
     const expectedValue = ((averageLifeExpectancy - age) * marsYears);
     const galacticAge = new GalacticAge(age);
