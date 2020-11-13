@@ -102,7 +102,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates life expectancy for Mercury.', () => {
     const age = 22;
-    const mercuryYears = Squidward;
+    const mercuryYears = .24;
     const averageLifeExpectancy = 88;
     const expectedValue = ((averageLifeExpectancy - age) * mercuryYears);
     const galacticAge = new GalacticAge(age);
