@@ -34,9 +34,11 @@ _This is intended as a proof of knowledge for week 5 at Epicodus. Returns user's
 * _ 3.) Input npm install and allow Node to install all webpacks and extensions.
 * _ 4.) Input npm run test and ensure all tests run!
 
-## Known Bugs
+## Known Bugs / Unfinished Tasks
 
 _No known bugs!_
+
+_Html/UI currently unfinished_
 
 ## Support and contact details
 
