@@ -13,11 +13,20 @@ _This is intended as a proof of knowledge for week 5 at Epicodus. Returns life e
 // 3.) Test if caculations apply properly to display users age on Venus. if (venussAge, galacticAge = age * marsYears)
 // 4.) Test if caculations apply properly to display users age on Mars. if (marsAge, galacticAge = age * marsYears) 
 // 5.) Test if caculations apply properly to display users age on Jupiter. if (jupiterAge, galacticAge = age * jupiterYears)
-// 6.) Test if calculation for life expectancy is initialized. (lifeExpectancy(planet)) 
-// 7.) Test if calculations apply in order to show the user's life expectancy on Mercury. (lifeExpectancy(Mercury))_
-// 8.) Test if calculations apply in order to show the user's life expectancy on Venus.(lifeExpectancy(Venus))_
-// 9.) Test if calculations apply in order to show the user's life expectancy on Mars.(lifeExpectancy(Mars))_
-// 10.) Test if calculations apply in order to show the user's life expectancy on Jupiter. (lifeExpectancy(Jupiter))_
+// 6.) Test if caculations apply properly to display users age on Saturn. if (saturnAge, galacticAge = age * saturnYears)
+// 7.) Test if caculations apply properly to display users age on Uranus. if (uranusAge, galacticAge = age * uranusYears)
+// 8.) Test if caculations apply properly to display users age on Neptune. if (neptuneAge, galacticAge = age * neptuneYears)
+// 9.) Test if caculations apply properly to display users age on Pluto. if (plutoAge, galacticAge = age * plutoYears)
+// 10.) Test if calculation for life expectancy is initialized. (lifeExpectancy(planet))
+// 11.) Test if calculations apply in order to show the user's life expectancy on Mercury. (lifeExpectancy(Mercury))
+// 12.) Test if calculations apply in order to show the user's life expectancy on Venus.(lifeExpectancy(Venus))
+// 13.) Test if calculations apply in order to show the user's life expectancy on Earth. (lifeExpectancy(Earth))
+// 14.) Test if calculations apply in order to show the user's life expectancy on Mars.(lifeExpectancy(Mars))
+// 15.) Test if calculations apply in order to show the user's life expectancy on Jupiter. (lifeExpectancy(Jupiter))
+// 16.) Test if calculations apply in order to show the user's life expectancy on Saturn. (lifeExpectancy(Saturn))
+// 17.) Test if calculations apply in order to show the user's life expectancy on Uranus. (lifeExpectancy(Uranus))
+// 18.) Test if calculations apply in order to show the user's life expectancy on Neptune. (lifeExpectancy(Neptune))
+// 19.) Test if calculations apply in order to show the user's life expectancy on Pluto. (lifeExpectancy(Pluto))
 
 ## Setup/Installation Requirements
 

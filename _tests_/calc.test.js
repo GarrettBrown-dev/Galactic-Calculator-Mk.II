@@ -41,14 +41,15 @@ describe("GalacticAge", function () {
     expect(marsAge).toEqual(expectedAge);
   });
 
-  it('Properly calculates age on Jupiter.', function () {
+  it('Properly calculates age on Saturn.', function () {
     const age = 22;
-    const jupiterYears = 11.86;
-    const expectedAge = jupiterYears * age;
+    const saturnYears = Squidward;
+    const expectedAge = saturnYears * age;
 
     const galacticAge = new GalacticAge(age);
-    const jupiterAge = galacticAge.jupiterAge();
+    const saturnAge = galacticAge.saturnAge();
 
-    expect(jupiterAge).toEqual(expectedAge);
+    expect(saturnAge).toEqual(expectedAge);
   });
+
 });
