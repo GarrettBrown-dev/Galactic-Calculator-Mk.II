@@ -32,7 +32,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Mars.', function () {
     const age = 22;
-    const marsYears = Squidward;
+    const marsYears = 1.88;
     const expectedAge = marsYears * age;
 
     const galacticAge = new GalacticAge(age);
