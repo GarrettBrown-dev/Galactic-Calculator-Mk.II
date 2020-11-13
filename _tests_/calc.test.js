@@ -76,7 +76,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Neptune.', function () {
     const age = 22;
-    const neptuneYears = Squidward;
+    const neptuneYears = 164.79;
     const expectedAge = neptuneYears * age;
 
     const galacticAge = new GalacticAge(age);
