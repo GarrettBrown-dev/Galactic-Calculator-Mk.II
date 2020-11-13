@@ -8,4 +8,14 @@ describe("GalacticAge", function () {
     expect(galacticAge.age).toEqual(age);
   });
 
+  it('Properly calculates age on Mercury.', function () {
+    const age = 22;
+    const mercuryYears = nothing;
+    const expectedAge = mercuryYears * age;
+
+    const galacticAge = new GalacticAge(age);
+    const mercuryAge = galacticAge.mercuryAge();
+
+    expect(mercuryAge).toEqual(expectedAge);
+  });
 });
