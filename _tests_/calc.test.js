@@ -43,7 +43,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Jupiter.', function () {
     const age = 22;
-    const jupiterYears = Squidward;
+    const jupiterYears = 11.86;
     const expectedAge = jupiterYears * age;
 
     const galacticAge = new GalacticAge(age);
