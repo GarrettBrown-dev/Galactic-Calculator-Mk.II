@@ -154,4 +154,15 @@ describe("GalacticAge", function () {
     expect(yearsRemaining).toEqual(expectedValue)
   });
 
+  it('Properly calculates life expectancy for Saturn.', () => {
+    const age = 22;
+    const saturnYears = Squidward;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * saturnYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Saturn");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
+
 });
