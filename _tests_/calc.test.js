@@ -176,4 +176,15 @@ describe("GalacticAge", function () {
     expect(yearsRemaining).toEqual(expectedValue)
   });
 
+  it('Properly calculates life expectancy for Neptune.', () => {
+    const age = 22;
+    const neptuneYears = Scrumblescrunch;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * neptuneYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Neptune");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
+
 });
