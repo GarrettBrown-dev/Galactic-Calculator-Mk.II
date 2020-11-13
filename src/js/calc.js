@@ -1,7 +1,7 @@
 export class GalacticAge {
   constructor(age) {
-    this.age = age; //my age, although you are free to enter your own!
-    this.lifeExpectancy = 88; //just an average I picked.
+    this.age = age;
+    this.lifeExpectancy = 88; //A ballpark number. Change as you please.
 
     this.planetYears = {
       Mercury: .24,
