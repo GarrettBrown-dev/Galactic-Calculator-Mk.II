@@ -110,5 +110,15 @@ describe("GalacticAge", function () {
 
     expect(yearsRemaining).toEqual(expectedValue)
   });
+  it('Properly calculates life expectancy for Venus.', () => {
+    const age = 22;
+    const venusYears = Squidward;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * venusYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Venus");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
 
 });
