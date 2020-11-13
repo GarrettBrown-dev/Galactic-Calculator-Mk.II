@@ -21,7 +21,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Venus.', function () {
     const age = 22;
-    const venusYears = Squidward;
+    const venusYears = .62;
     const expectedAge = venusYears * age;
 
     const galacticAge = new GalacticAge(age);
