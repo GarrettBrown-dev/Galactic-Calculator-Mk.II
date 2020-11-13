@@ -5,7 +5,7 @@ export class GalacticAge {
 
     this.planetYears = {
       Mercury: .24,
-      Venus: .88,
+      Venus: .62,
       Earth: 1.00,
       Mars: 1.88,
       Jupiter: 11.86,
@@ -18,6 +18,10 @@ export class GalacticAge {
   mercuryAge() {
     let mercuryAge = (this.age * this.planetYears.Mercury);
     return mercuryAge
+  }
+  venusAge() {
+    let venusAge = (this.age * this.planetYears.Venus);
+    return venusAge
   }
 }
 
