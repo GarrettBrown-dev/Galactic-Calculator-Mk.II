@@ -51,6 +51,13 @@ export class GalacticAge {
     let plutoAge = (this.age * this.planetYears.Pluto);
     return plutoAge
   }
+
+  lifeExpectancy(planet) {
+    const yearsRemaining = this.averageLifeExpectancy - this.age;
+    if (!planet) {
+      return yearsRemaining;
+    }
+    const yearsLeftOnPlanet = yearsRemaining * this.planetYears[planet];
+    return yearsLeftOnPlanet;
+  }
 }
-
-

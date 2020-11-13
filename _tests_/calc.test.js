@@ -8,6 +8,8 @@ describe("GalacticAge", function () {
     expect(galacticAge.age).toEqual(age);
   });
 
+  // --> AGE TESTS <-- //
+
   it('Properly calculates age on Mercury.', function () {
     const age = 22;
     const mercuryYears = .24;
@@ -94,6 +96,19 @@ describe("GalacticAge", function () {
     const plutoAge = galacticAge.plutoAge();
 
     expect(plutoAge).toEqual(expectedAge);
+  });
+
+  // --> LIFE EXPECTANCY TESTS <-- //
+
+  it('Properly calculates life expectancy for Mercury.', () => {
+    const age = 22;
+    const mercuryYears = Squidward;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * mercuryYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Mercury");
+
+    expect(yearsRemaining).toEqual(expectedValue)
   });
 
 });
