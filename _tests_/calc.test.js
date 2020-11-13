@@ -189,7 +189,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates life expectancy for Pluto.', () => {
     const age = 22;
-    const plutoYears = Squidward;
+    const plutoYears = 248.59;
     const averageLifeExpectancy = 88;
     const expectedValue = ((averageLifeExpectancy - age) * plutoYears);
     const galacticAge = new GalacticAge(age);
