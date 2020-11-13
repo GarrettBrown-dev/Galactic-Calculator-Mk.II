@@ -10,7 +10,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Mercury.', function () {
     const age = 22;
-    const mercuryYears = nothing;
+    const mercuryYears = .24;
     const expectedAge = mercuryYears * age;
 
     const galacticAge = new GalacticAge(age);
