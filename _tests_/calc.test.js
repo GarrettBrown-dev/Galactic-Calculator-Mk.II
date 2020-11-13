@@ -132,4 +132,15 @@ describe("GalacticAge", function () {
     expect(yearsRemaining).toEqual(expectedValue)
   });
 
+  it('Properly calculates life expectancy for Mars.', () => {
+    const age = 22;
+    const marsYears = Squidward;
+    const averageLifeExpectancy = 88;
+    const expectedValue = ((averageLifeExpectancy - age) * marsYears);
+    const galacticAge = new GalacticAge(age);
+    const yearsRemaining = galacticAge.lifeExpectancy("Mars");
+
+    expect(yearsRemaining).toEqual(expectedValue)
+  });
+
 });
