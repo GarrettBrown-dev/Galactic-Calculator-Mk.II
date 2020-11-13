@@ -1,7 +1,7 @@
 export class GalacticAge {
   constructor(age) {
     this.age = age;
-    this.lifeExpectancy = 88; //A ballpark number. Change as you please.
+    this.averageLifeExpectancy = 88; //A ballpark number. Change as you please.
 
     this.planetYears = {
       Mercury: .24,
@@ -51,13 +51,13 @@ export class GalacticAge {
     let plutoAge = (this.age * this.planetYears.Pluto);
     return plutoAge
   }
-
   lifeExpectancy(planet) {
     const yearsRemaining = this.averageLifeExpectancy - this.age;
     if (!planet) {
       return yearsRemaining;
     }
-    const yearsLeftOnPlanet = yearsRemaining * this.planetYears[planet];
-    return yearsLeftOnPlanet;
+    const yearsRemainingOnPlanet = yearsRemaining * this.planetYears[planet];
+    return yearsRemainingOnPlanet;
+
   }
 }
