@@ -123,12 +123,11 @@ describe("GalacticAge", function () {
   });
 
   it('Properly calculates life expectancy for Earth.', () => {
-    const age = 22;
-    const earthYears = Squidward;
+    const age = Squidward;
     const averageLifeExpectancy = 88;
-    const expectedValue = ((averageLifeExpectancy - age) * earthYears);
+    const expectedValue = (averageLifeExpectancy - age);
     const galacticAge = new GalacticAge(age);
-    const yearsRemaining = galacticAge.lifeExpectancy("Earth");
+    const yearsRemaining = galacticAge.lifeExpectancy();
 
     expect(yearsRemaining).toEqual(expectedValue)
   });
