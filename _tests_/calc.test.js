@@ -34,7 +34,7 @@ describe("GalacticAge", function () {
 
   it('Properly calculates age on Earth', function () {
     const age = 22;
-    const earthYears = Squidward;
+    const earthYears = 1.00;
     const expectedAge = earthYears * age;
 
     const galacticAge = new GalacticAge(age);
