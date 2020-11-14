@@ -9,15 +9,24 @@ body {
   font-family: 'Courier New', Courier, monospace;
  }
  
-h1{
-  /* position:absolute;
-  top: 120px;
-  left:45px;
-  width:150px; */
+h1 {
   font-weight: bolder;
+  font-size: 28;
 }
 
-#show-Cost{
+h2 {
+  font-size: 22;
+}
+
+label {
+  font-size: 16;
+}
+
+#ageResponse {
+  display: none;
+}
+
+#lifeResponse { 
   display: none;
 }
 
