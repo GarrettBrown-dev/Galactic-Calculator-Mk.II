@@ -32,17 +32,6 @@ describe("GalacticAge", function () {
     expect(venusAge).toEqual(expectedAge);
   });
 
-  it('Properly calculates age on Earth', function () {
-    const age = 22;
-    const earthYears = 1.00;
-    const expectedAge = earthYears * age;
-
-    const galacticAge = new GalacticAge(age);
-    const earthAge = galacticAge.earthAge();
-
-    expect(earthAge).toEqual(expectedAge);
-  });
-
   it('Properly calculates age on Mars.', function () {
     const age = 22;
     const marsYears = 1.88;

@@ -23,10 +23,6 @@ export class GalacticAge {
     let venusAge = (this.age * this.planetYears.Venus);
     return venusAge
   }
-  earthAge() {
-    let earthAge = (this.age * this.planetYears.Earth);
-    return earthAge
-  }
   marsAge() {
     let marsAge = (this.age * this.planetYears.Mars);
     return marsAge
