@@ -15,44 +15,20 @@ export class GalacticAge {
       Pluto: 248.59,
     }
   }
-  mercuryAge() {
-    let mercuryAge = (this.age * this.planetYears.Mercury);
-    return mercuryAge
+
+  getPlanetAge(planet) {
+    return this.age * this.planetYears[planet]
   }
-  venusAge() {
-    let venusAge = (this.age * this.planetYears.Venus);
-    return venusAge
-  }
-  marsAge() {
-    let marsAge = (this.age * this.planetYears.Mars);
-    return marsAge
-  }
-  jupiterAge() {
-    let jupiterAge = (this.age * this.planetYears.Jupiter);
-    return jupiterAge
-  }
-  saturnAge() {
-    let saturnAge = (this.age * this.planetYears.Saturn);
-    return saturnAge
-  }
-  uranusAge() {
-    let uranusAge = (this.age * this.planetYears.Uranus);
-    return uranusAge
-  }
-  neptuneAge() {
-    let neptuneAge = (this.age * this.planetYears.Neptune);
-    return neptuneAge
-  }
-  plutoAge() {
-    let plutoAge = (this.age * this.planetYears.Pluto);
-    return plutoAge
-  }
-  lifeExpectancy(planet) {
+
+  lifeExpectancy(planet = "Earth") {
     const yearsRemaining = this.averageLifeExpectancy - this.age;
-    if (!planet) {
-      return yearsRemaining;
-    }
     const yearsRemainingOnPlanet = yearsRemaining * this.planetYears[planet];
+    if (yearsRemainingOnPlanet < 0) {
+      return `You've surpassed the life expectancy for this planet by ${yearsRemainingOnPlanet * -1}`
+    }
+    else if (yearsRemainingOnPlanet === 0) {
+      return `You've lived up to the life expectancy on this planet! May you live many more years!`
+    }
     return yearsRemainingOnPlanet;
 
   }
